@@ -1,21 +1,51 @@
-# HER2 Computational Oncology Portfolio
+# 🧬 HER2 Computational Oncology Portfolio
 
 ## About
 
-This repository documents my computational oncology learning journey focused on HER2-positive breast cancer.
+This repository showcases my computational oncology learning journey focused on **HER2-positive breast cancer**. The projects demonstrate an end-to-end computational workflow, from protein preparation to transcriptomic analysis and functional interpretation.
 
-## Research Workflow
+---
 
-1. Protein Preparation (HER2 - PDB ID: 5TDN)
-2. ADMET Screening
-3. Molecular Docking
-4. Molecular Dynamics Simulation
-5. RNA-Seq Analysis using Galaxy
-6. Functional Enrichment Analysis
+## 🔬 Research Workflow
 
-## Tools Used
+```text
+HER2 Protein Preparation (PDB ID: 5TDN)
+               │
+               ▼
+ADMET Screening of Ventilago madraspatana Phytochemicals
+               │
+               ▼
+Molecular Docking
+               │
+               ▼
+100 ns Molecular Dynamics Simulation
+               │
+               ▼
+RNA-Seq Analysis using Galaxy
+               │
+               ▼
+Functional Enrichment (GO/KEGG)
+```
 
-- Discovery Studio
+---
+
+## 📂 Projects
+
+| Project | Description | Status |
+|---------|-------------|--------|
+| 01_Protein_Preparation | HER2 (5TDN) protein preparation | 🟡 In Progress |
+| 02_ADMET_Analysis | ADMET screening of phytochemicals | 🟡 In Progress |
+| 03_Molecular_Docking | Docking against HER2 | 🟡 In Progress |
+| 04_Molecular_Dynamics | 100 ns MD simulation | 🟡 In Progress |
+| 05_RNASeq_Galaxy | RNA-Seq analysis using Galaxy | 🟡 In Progress |
+| 06_Functional_Enrichment | GO & KEGG pathway analysis | 🟡 In Progress |
+
+---
+
+## 🛠️ Software & Tools
+
+- PyMOL
+- Discovery Studio Visualizer
 - PyRx
 - SwissADME
 - CHARMM-GUI
@@ -24,6 +54,28 @@ This repository documents my computational oncology learning journey focused on 
 - R / Bioconductor
 - Python
 
-## Current Status
+---
 
-🟡 Portfolio under development.
+## 🎯 Research Focus
+
+- **Disease:** HER2-positive Breast Cancer
+- **Target Gene:** ERBB2
+- **Target Protein:** HER2
+- **PDB ID:** 5TDN
+- **Ligand Source:** *Ventilago madraspatana* phytochemicals
+
+---
+
+## 🚀 Future Scope
+
+- Biomarker Identification
+- Multi-omics Integration
+- AI-assisted Drug Discovery
+- Drug Repurposing
+- Research Publication
+
+---
+
+## 📌 Portfolio Status
+
+This portfolio is being continuously updated as I complete each computational analysis and add results, figures, and reports.
