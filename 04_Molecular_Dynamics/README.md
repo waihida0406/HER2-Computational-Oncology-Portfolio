@@ -193,29 +193,29 @@ Figures
 
  Figure 1. Root Mean Square Deviation (RMSD)
 
-*(Insert RMSD graph)*
+(Insert RMSD graph)
 
 ---
 
-## Figure 2. Root Mean Square Fluctuation (RMSF)
+ Figure 2. Root Mean Square Fluctuation (RMSF)
 
-*(Insert RMSF graph)*
-
----
-
-## Figure 3. Radius of Gyration (Rg)
-
-*(Insert Rg graph)*
+(Insert RMSF graph)
 
 ---
 
-## Figure 4. Solvent Accessible Surface Area (SASA)
+ Figure 3. Radius of Gyration (Rg)
 
-*(Insert SASA graph)*
+(Insert Rg graph)
 
 ---
 
-# 🧠 Skills Demonstrated
+ Figure 4. Solvent Accessible Surface Area (SASA)
+
+(Insert SASA graph)
+
+---
+
+ Skills Demonstrated
 
 - Molecular Dynamics Simulation
 - GROMACS
@@ -230,7 +230,7 @@ Figures
 
 ---
 
-# 📚 References
+ References
 
 1. Abraham MJ et al. GROMACS: High Performance Molecular Simulations through Multi-Level Parallelism. SoftwareX (2015).
 
@@ -242,6 +242,6 @@ Figures
 
 ---
 
-# 🔗 Next Project
+ Next Project
 
 ➡ Project 5: RNA-Seq Analysis Using Galaxy
