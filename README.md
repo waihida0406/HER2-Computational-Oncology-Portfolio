@@ -1,12 +1,12 @@
-# 🧬 HER2 Computational Oncology Portfolio
+HER2 Computational Oncology Portfolio
 
-## About
+About
 
 This repository showcases my computational oncology learning journey focused on **HER2-positive breast cancer**. The projects demonstrate an end-to-end computational workflow, from protein preparation to transcriptomic analysis and functional interpretation.
 
 ---
 
-## 🔬 Research Workflow
+Research Workflow
 
 ```text
 HER2 Protein Preparation (PDB ID: 5TDN)
@@ -29,7 +29,7 @@ Functional Enrichment (GO/KEGG)
 
 ---
 
-## 📂 Projects
+Projects
 
 | Project | Description | Status |
 |---------|-------------|--------|
@@ -42,7 +42,7 @@ Functional Enrichment (GO/KEGG)
 
 ---
 
-## 🛠️ Software & Tools
+Software & Tools
 
 - PyMOL
 - Discovery Studio Visualizer
@@ -55,8 +55,7 @@ Functional Enrichment (GO/KEGG)
 - Python
 
 ---
-
-## 🎯 Research Focus
+Research Focus
 
 - **Disease:** HER2-positive Breast Cancer
 - **Target Gene:** ERBB2
@@ -66,7 +65,7 @@ Functional Enrichment (GO/KEGG)
 
 ---
 
-## 🚀 Future Scope
+Future Scope
 
 - Biomarker Identification
 - Multi-omics Integration
@@ -76,6 +75,6 @@ Functional Enrichment (GO/KEGG)
 
 ---
 
-## 📌 Portfolio Status
+Portfolio Status
 
 This portfolio is being continuously updated as I complete each computational analysis and add results, figures, and reports.
