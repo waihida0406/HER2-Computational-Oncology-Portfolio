@@ -33,7 +33,7 @@ Functional Enrichment (GO/KEGG)
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| 01_Protein_Preparation | HER2 (5TDN) protein preparation | 🟡 In Progress |
+| 01_Protein_Preparation | HER2 (5TDN) protein preparation | Completed |
 | 02_ADMET_Analysis | ADMET screening of phytochemicals | 🟡 In Progress |
 | 03_Molecular_Docking | Docking against HER2 | 🟡 In Progress |
 | 04_Molecular_Dynamics | 100 ns MD simulation | 🟡 In Progress |
