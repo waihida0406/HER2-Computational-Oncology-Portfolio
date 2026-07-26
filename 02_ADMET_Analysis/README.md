@@ -1,12 +1,12 @@
 # 🧪 Project 2: ADMET Screening of *Ventilago madraspatana* Phytochemicals
 
-## 📌 Status
+##  Status
 
 ✅ Completed
 
 ---
 
-## 📖 Background
+##  Background
 
 Drug candidates must possess suitable pharmacokinetic properties before they can be considered for further development. ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) analysis helps predict whether a compound is likely to be safe, bioavailable, and drug-like.
 
@@ -14,20 +14,20 @@ In this project, phytochemicals obtained from *Ventilago madraspatana* were eval
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 To evaluate the pharmacokinetic properties and drug-likeness of selected phytochemicals from *Ventilago madraspatana* using SwissADME and identify compounds suitable for molecular docking against the HER2 protein.
 
 ---
 
-## 🌿 Compound Source
+##  Compound Source
 
 - IMPPAT Database
 - PubChem Database
 
 ---
 
-## 🛠️ Software & Databases
+## Software & Databases
 
 - SwissADME
 - IMPPAT
@@ -35,7 +35,7 @@ To evaluate the pharmacokinetic properties and drug-likeness of selected phytoch
 
 ---
 
-## 🔬 Workflow
+##  Workflow
 
 1. Retrieved phytochemicals reported for *Ventilago madraspatana* from the IMPPAT database.
 2. Obtained compound information and SMILES notation from PubChem.
@@ -47,7 +47,7 @@ To evaluate the pharmacokinetic properties and drug-likeness of selected phytoch
 
 ---
 
-## 📊 Parameters Evaluated
+##  Parameters Evaluated
 
 ### Absorption
 - Gastrointestinal (GI) Absorption
@@ -69,7 +69,7 @@ To evaluate the pharmacokinetic properties and drug-likeness of selected phytoch
 
 ---
 
-## 📈 Outcome
+##  Outcome
 
 - Successfully evaluated the pharmacokinetic properties of selected phytochemicals.
 - Identified compounds with good drug-likeness and favorable ADMET profiles.
@@ -78,7 +78,7 @@ To evaluate the pharmacokinetic properties and drug-likeness of selected phytoch
 
 ---
 
-## 📂 Files Included
+##  Files Included
 
 - ADMET prediction results
 - SwissADME reports
@@ -87,7 +87,7 @@ To evaluate the pharmacokinetic properties and drug-likeness of selected phytoch
 
 ---
 
-## 🧠 Skills Demonstrated
+##  Skills Demonstrated
 
 - Drug-likeness prediction
 - Pharmacokinetic analysis
