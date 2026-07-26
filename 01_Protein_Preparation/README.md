@@ -1,7 +1,7 @@
-🧬 Project 1: Protein Preparation of HER2 (PDB ID: 5TDN)
+Project 1: Protein Preparation of HER2 (PDB ID: 5TDN)
 Status
 
-✅ Completed
+Completed
 
 ---
  Background
@@ -123,6 +123,6 @@ Key Learning Outcomes
 
 ---
 
-## 🔗 Next Project
+Next Project
 
 ➡ **Project 2: ADMET Screening of *Ventilago madraspatana* Phytochemicals**
