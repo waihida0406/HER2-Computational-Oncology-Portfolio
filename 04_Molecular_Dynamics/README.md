@@ -193,25 +193,33 @@ Figures
 
  Figure 1. Root Mean Square Deviation (RMSD)
 
-(Insert RMSD graph)
+<p align="center">
+  <img src="images/rmsd.png" alt="RMSD Plot" width="700">
+</p>
 
 ---
 
  Figure 2. Root Mean Square Fluctuation (RMSF)
 
-(Insert RMSF graph)
+<p align="center">
+  <img src="images/rmsf.png" alt="RMSF Plot" width="700">
+</p>
 
 ---
 
  Figure 3. Radius of Gyration (Rg)
 
-(Insert Rg graph)
+<p align="center">
+  <img src="images/rg.png" alt="Radius of Gyration Plot" width="700">
+</p>
 
 ---
 
  Figure 4. Solvent Accessible Surface Area (SASA)
 
-(Insert SASA graph)
+<p align="center">
+  <img src="images/sasa.png" alt="SASA Plot" width="700">
+</p>
 
 ---
 
