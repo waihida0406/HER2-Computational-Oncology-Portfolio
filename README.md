@@ -36,7 +36,7 @@ Functional Enrichment (GO/KEGG)
 | 01_Protein_Preparation | HER2 (5TDN) protein preparation | Completed |
 | 02_ADMET_Analysis | ADMET screening of phytochemicals | Completed |
 | 03_Molecular_Docking | Docking against HER2 |Completed |
-| 04_Molecular_Dynamics | 100 ns MD simulation | 🟡 In Progress |
+| 04_Molecular_Dynamics | 100 ns MD simulation | Completed|
 | 05_RNASeq_Galaxy | RNA-Seq analysis using Galaxy | 🟡 In Progress |
 | 06_Functional_Enrichment | GO & KEGG pathway analysis | 🟡 In Progress |
 
