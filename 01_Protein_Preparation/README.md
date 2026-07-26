@@ -1,12 +1,10 @@
-# 🧬 Project 1: Protein Preparation of HER2 (PDB ID: 5TDN)
-
-## 📌 Status
+🧬 Project 1: Protein Preparation of HER2 (PDB ID: 5TDN)
+Status
 
 ✅ Completed
 
 ---
-
-## 📖 Background
+ Background
 
 Human Epidermal Growth Factor Receptor 2 (HER2), encoded by the **ERBB2** gene, is a receptor tyrosine kinase that is overexpressed in approximately 20–25% of breast cancer cases. HER2 overexpression is associated with aggressive tumor growth and poor clinical prognosis, making it an important therapeutic target in breast cancer research.
 
@@ -14,13 +12,13 @@ Protein preparation is a critical step in structure-based drug discovery because
 
 ---
 
-## 🎯 Objective
+Objective
 
 To prepare the HER2 protein structure (PDB ID: 5TDN) for molecular docking and molecular dynamics simulation by removing unnecessary molecules, correcting the protein structure, and optimizing it for computational analysis.
 
 ---
 
-## 🧬 Protein Information
+ Protein Information
 
 | Parameter | Details |
 |-----------|---------|
@@ -33,21 +31,20 @@ To prepare the HER2 protein structure (PDB ID: 5TDN) for molecular docking and m
 
 ---
 
-## 🛠 Software Used
+Software Used
 
 - Protein Data Bank (PDB)
 - BIOVIA Discovery Studio Visualizer
 - PyMOL
 
 ---
+ Methodology
 
-## 🔬 Methodology
-
-### 1. Protein Retrieval
+1. Protein Retrieval
 
 The crystal structure of HER2 (PDB ID: 5TDN) was downloaded from the Protein Data Bank.
 
-### 2. Structure Inspection
+2. Structure Inspection
 
 The protein structure was examined to identify:
 - Water molecules
@@ -55,31 +52,31 @@ The protein structure was examined to identify:
 - Heteroatoms
 - Protein chains
 
-### 3. Protein Cleaning
+3. Protein Cleaning
 
 The following components were removed:
 - Water molecules
 - Co-crystallized ligand
 - Unnecessary heteroatoms
 
-### 4. Hydrogen Addition
+4. Hydrogen Addition
 
 Missing hydrogen atoms were added to improve the structural integrity and prepare the protein for molecular docking.
 
-### 5. Protein Validation
+5. Protein Validation
 
 The prepared protein was inspected to ensure:
 - Proper chain selection
 - Absence of unwanted molecules
 - Correct structural integrity
 
-### 6. File Preparation
+6. File Preparation
 
 The cleaned HER2 protein structure was saved in PDB format for subsequent molecular docking and molecular dynamics simulations.
 
 ---
 
-## 📊 Workflow
+ Workflow
 
 ```text
 Download HER2 Structure (PDB ID: 5TDN)
@@ -108,7 +105,7 @@ Save Prepared Protein
 
 ---
 
-## 📁 Project Output
+Project Output
 
 - Prepared HER2 protein structure (.pdb)
 - Clean protein without water molecules and co-crystallized ligand
@@ -117,7 +114,7 @@ Save Prepared Protein
 
 ---
 
-## 💡 Key Learning Outcomes
+Key Learning Outcomes
 
 - Learned the importance of protein preparation in structure-based drug discovery.
 - Gained experience using the Protein Data Bank, BIOVIA Discovery Studio, and PyMOL.
