@@ -44,7 +44,7 @@ Objectives
 
 ---
 
-# 🧬 Biological Background
+ Biological Background
 
 Next-Generation Sequencing technologies have revolutionized molecular biology by enabling rapid sequencing of DNA and RNA.
 
