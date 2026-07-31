@@ -1,4 +1,4 @@
-# 🧬 Project 5 | NGS Quality Assessment and Sequence Analysis Using Galaxy
+Project 5 | NGS Quality Assessment and Sequence Analysis Using Galaxy
 
 <p align="center">
 
@@ -14,7 +14,7 @@
 
 ---
 
-# 📌 Project Overview
+Project Overview
 
 High-throughput sequencing (Next-Generation Sequencing, NGS) generates millions of DNA or RNA reads that require quality assessment before downstream analysis.
 
@@ -24,7 +24,7 @@ The objective was to determine sequencing quality, improve read quality by remov
 
 ---
 
-# 🎯 Objectives
+Objectives
 
 ✔ Download publicly available sequencing data
 
@@ -68,7 +68,7 @@ FastQC is one of the most widely used quality assessment tools for evaluating se
 
 ---
 
-# 📂 Dataset Information
+Dataset Information
 
 | Parameter | Description |
 |-----------|-------------|
@@ -80,7 +80,7 @@ FastQC is one of the most widely used quality assessment tools for evaluating se
 
 ---
 
-# 🛠 Software Used
+Software Used
 
 | Software | Purpose |
 |----------|----------|
@@ -91,7 +91,7 @@ FastQC is one of the most widely used quality assessment tools for evaluating se
 
 ---
 
-# 🔬 Experimental Workflow
+Experimental Workflow
 
 ```text
 NCBI SRA
@@ -126,7 +126,7 @@ Biological Interpretation
 
 ---
 
-# 📊 Step 1 | FASTQ Dataset Retrieval
+ Step 1 | FASTQ Dataset Retrieval
 
 A publicly available sequencing dataset (SRR25848669) was downloaded from the NCBI Sequence Read Archive in FASTQ format.
 
@@ -141,7 +141,7 @@ These data were imported into Galaxy for downstream quality assessment.
 
 ---
 
-# 📷 Figure 1 | FASTQ Structure
+ Figure 1 | FASTQ Structure
 
 <p align="center">
 
@@ -151,13 +151,13 @@ These data were imported into Galaxy for downstream quality assessment.
 
 ---
 
-# 📊 Step 2 | Initial FastQC Analysis
+ Step 2 | Initial FastQC Analysis
 
 FastQC was performed to evaluate sequencing quality before trimming.
 
 ---
 
-## Figure 2 | FastQC Report Before Trimming
+ Figure 2 | FastQC Report Before Trimming
 
 <p align="center">
 
@@ -167,7 +167,7 @@ FastQC was performed to evaluate sequencing quality before trimming.
 
 ---
 
-# Quality Assessment
+Quality Assessment
 
 | Module | Status | Interpretation |
 |---------|--------|----------------|
@@ -182,7 +182,7 @@ FastQC was performed to evaluate sequencing quality before trimming.
 
 ---
 
-# Result Interpretation
+Result Interpretation
 
 The sequencing dataset exhibited high overall quality.
 
@@ -194,13 +194,13 @@ Overall, the sequencing reads were considered suitable for downstream processing
 
 ---
 
-# ✂ Step 3 | Quality Trimming
+Step 3 | Quality Trimming
 
 Low-quality bases and adapter contamination were removed using Trim Galore.
 
 ---
 
-## Figure 3 | Trimming Summary
+ Figure 3 | Trimming Summary
 
 <p align="center">
 
@@ -210,7 +210,7 @@ Low-quality bases and adapter contamination were removed using Trim Galore.
 
 ---
 
-# Interpretation
+Interpretation
 
 Quality trimming removed unwanted low-quality regions while preserving high-quality sequencing reads.
 
@@ -218,13 +218,13 @@ This improves the reliability of downstream analyses.
 
 ---
 
-# 📊 Step 4 | FastQC After Trimming
+ Step 4 | FastQC After Trimming
 
 FastQC analysis was repeated after trimming.
 
 ---
 
-## Figure 4 | FastQC After Trimming
+ Figure 4 | FastQC After Trimming
 
 <p align="center">
 
@@ -234,7 +234,7 @@ FastQC analysis was repeated after trimming.
 
 ---
 
-# Before vs After Comparison
+ Before vs After Comparison
 
 | Parameter | Before | After |
 |------------|---------|--------|
@@ -245,7 +245,7 @@ FastQC analysis was repeated after trimming.
 
 ---
 
-# Interpretation
+ Interpretation
 
 Comparison of FastQC reports demonstrated improved sequencing quality following trimming.
 
@@ -253,13 +253,13 @@ The processed sequencing reads were suitable for downstream biological analysis.
 
 ---
 
-# 🔎 Step 5 | BLAST Analysis
+ Step 5 | BLAST Analysis
 
 Representative sequencing reads were analysed using NCBI BLAST.
 
 ---
 
-## Figure 5 | BLAST Output
+Figure 5 | BLAST Output
 
 <p align="center">
 
@@ -268,8 +268,7 @@ Representative sequencing reads were analysed using NCBI BLAST.
 </p>
 
 ---
-
-# BLAST Summary
+ BLAST Summary
 
 | Parameter | Result |
 |-----------|--------|
@@ -282,7 +281,7 @@ Representative sequencing reads were analysed using NCBI BLAST.
 
 ---
 
-# Biological Interpretation
+Biological Interpretation
 
 BLAST identified homologous nucleotide sequences within the NCBI database.
 
@@ -290,7 +289,7 @@ The observed sequence similarity confirmed the biological identity of the sequen
 
 ---
 
-# 📈 Skills Demonstrated
+ Skills Demonstrated
 
 - Bioinformatics Workflow Development
 - Galaxy Platform
@@ -305,7 +304,7 @@ The observed sequence similarity confirmed the biological identity of the sequen
 
 ---
 
-# 📂 Repository Structure
+Repository Structure
 
 ```
 05_RNASeq_Galaxy
@@ -332,7 +331,7 @@ The observed sequence similarity confirmed the biological identity of the sequen
 
 ---
 
-# 🏆 Key Learning Outcomes
+Key Learning Outcomes
 
 - Understood FASTQ file organization and sequencing quality metrics.
 - Performed quality assessment using FastQC.
@@ -343,7 +342,7 @@ The observed sequence similarity confirmed the biological identity of the sequen
 
 ---
 
-# 📚 References
+References
 
 1. Andrews S. *FastQC: A Quality Control Tool for High Throughput Sequence Data.*
 2. Galaxy Project.
@@ -353,6 +352,6 @@ The observed sequence similarity confirmed the biological identity of the sequen
 
 ---
 
-# 🚀 Next Project
+Next Project
 
 ➡ **Project 6: Functional Enrichment Analysis (Gene Ontology and KEGG Pathway Analysis)**
