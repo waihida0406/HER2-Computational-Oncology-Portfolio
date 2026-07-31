@@ -165,47 +165,51 @@ The enrichment results were visualized using bar plots and dot plots generated b
 ---
 
  Results
+## 1. GO Biological Process (BP)
 
-## Figure 1. GO Biological Process
+### Bar Plot
 
-*(Insert GO_BP.png)*
+![GO Biological Process Barplot](images/go_bp_barplot.png)
 
----
+### Top Enriched GO Biological Processes
 
- Interpretation
-
-The enriched biological processes indicate increased cellular proliferation, signal transduction, and regulation of apoptosis, which are characteristic features of HER2-positive breast cancer.
-
----
-
- Figure 2. GO Molecular Function
-
-*(Insert GO_MF.png)*
+![GO Biological Process Table](images/go_bp_table.png)
 
 ---
 
- Interpretation
+## 2. GO Cellular Component (CC)
 
-Most enriched molecular functions were associated with kinase activity, ATP binding, and receptor signaling, reflecting the critical role of HER2 receptor activation.
+### Bar Plot
 
----
+![GO Cellular Component Barplot](images/go_cc_barplot.png)
 
- Figure 3. GO Cellular Component
+### Top Enriched GO Cellular Components
 
-*(Insert GO_CC.png)*
-
----
-
- Interpretation
-
-Many enriched genes were localized to the plasma membrane, receptor complexes, cytoplasm, and nucleus, consistent with receptor-mediated signaling.
+![GO Cellular Component Table](images/go_cc_table.png)
 
 ---
 
- Figure 4. KEGG Pathway Enrichment
+## 3. GO Molecular Function (MF)
 
-*(Insert KEGG.png)*
+### Bar Plot
 
+![GO Molecular Function Barplot](images/go_mf_barplot.png)
+
+### Top Enriched GO Molecular Functions
+
+![GO Molecular Function Table](images/go_mf_table.png)
+
+---
+
+## 4. KEGG Pathway Analysis
+
+### Bar Plot
+
+![KEGG Pathway Barplot](images/kegg_barplot.png)
+
+### Top Enriched KEGG Pathways
+
+![KEGG Pathway Table](images/kegg_table.png)
 ---
 
  Interpretation
