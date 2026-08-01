@@ -252,5 +252,14 @@ these warnings are commonly observed in RNA-Seq datasets and do not necessarily 
 - Bioinformatics Data Preprocessing
 
 ---
+## Next Steps
 
+The next phase of this project will include:
+
+- Read trimming (if required)
+- HISAT2 alignment
+- Gene quantification using featureCounts
+- Differential gene expression analysis
+- Functional enrichment (GO and KEGG)
+- Biological interpretation of results
 
