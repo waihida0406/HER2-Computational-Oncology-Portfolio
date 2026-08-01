@@ -1,4 +1,4 @@
-Project 6: Functional Enrichment Analysis (GO & KEGG)
+Project 7: Functional Enrichment Analysis (GO & KEGG)
 
 Project Status
 
