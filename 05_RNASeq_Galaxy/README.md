@@ -73,7 +73,7 @@ RNA-Seq Alignment
 
 The RNA-Seq FASTQ dataset was successfully uploaded into the Galaxy platform and used as input for FastQC analysis.
 
-![Galaxy Upload](images/01_galaxy_upload.png)
+![Galaxy Upload](01_galaxy_upload.png)
 
 ---
 
@@ -96,7 +96,7 @@ The FastQC summary provides an overview of all quality control modules.
 - Sequence Duplication Levels
 - Adapter Content
 
-![FastQC Summary](images/02_fastqc_summary.png)
+![FastQC Summary](02_fastqc_summary.png)
 
 ---
 
@@ -113,7 +113,7 @@ This module summarizes the sequencing dataset, including read length, sequencing
 
 Result: **PASS**
 
-![Basic Statistics](images/03_basic_statistics.png)
+![Basic Statistics](03_basic_statistics.png)
 
 ---
 
@@ -127,7 +127,7 @@ The quality remained consistently above Q30 across the entire read length, indic
 
 Result: **PASS**
 
-![Per Base Quality](images/04_per_base_sequence_quality.png)
+![Per Base Sequence Quality](04_per_base_sequence_quality.png)
 
 ---
 
@@ -141,7 +141,7 @@ Nearly all reads possess high average quality scores, indicating reliable sequen
 
 Result: **PASS**
 
-![Per Sequence Quality](images/05_per_sequence_quality.png)
+![Per Sequence Quality Scores](05_per_sequence_quality.png)
 
 ---
 
@@ -155,7 +155,7 @@ Minor nucleotide bias is observed at the beginning of sequencing reads, which is
 
 Result: **WARNING**
 
-![Per Base Sequence Content](images/06_per_base_sequence_content.png)
+![Per Base Sequence Content](06_per_base_sequence_content.png)
 
 ---
 
@@ -169,7 +169,7 @@ The GC distribution is slightly shifted from the theoretical model, reflecting t
 
 Result: **WARNING**
 
-![Per Sequence GC Content](images/07_per_sequence_gc_content.png)
+![Per Sequence GC Content](07_per_sequence_gc_content.png)
 
 ---
 
@@ -183,7 +183,7 @@ Moderate duplication levels are present, which are expected in highly expressed 
 
 Result: **WARNING**
 
-![Sequence Duplication](images/08_sequence_duplication_levels.png)
+![Sequence Duplication Levels](08_sequence_duplication_levels.png)
 
 ---
 
@@ -197,7 +197,7 @@ No significant overrepresented sequences were detected.
 
 Result: **PASS**
 
-![Overrepresented Sequences](images/09_overrepresented_sequences.png)
+![Overrepresented Sequences](09_overrepresented_sequences.png)
 
 ---
 
@@ -211,8 +211,7 @@ No ambiguous nucleotides were detected throughout sequencing reads.
 
 Result: **PASS**
 
-![Per Base N Content](images/10_per_base_n_content.png)
-
+![Per Base N Content](10_per_base_n_content.png)
 ---
 
 # 9. Sequence Length Distribution
@@ -225,8 +224,7 @@ All sequencing reads are exactly 150 bp in length, indicating uniform sequencing
 
 Result: **PASS**
 
-![Sequence Length Distribution](images/11_sequence_length_distribution.png)
-
+![Sequence Length Distribution](11_sequence_length_distribution.png)
 ---
 
 # Overall Conclusion
@@ -255,6 +253,4 @@ these warnings are commonly observed in RNA-Seq datasets and do not necessarily 
 
 ---
 
-# Next Project
 
-**Project 7 – RNA-Seq Read Trimming and Preprocessing Using Trim Galore**
