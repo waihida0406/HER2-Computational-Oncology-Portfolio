@@ -1,357 +1,260 @@
-Project 5 | NGS Quality Assessment and Sequence Analysis Using Galaxy
+# Project 5 – RNA-Seq Quality Control (FastQC) Using Galaxy
 
-<p align="center">
+## Overview
 
-![Platform](https://img.shields.io/badge/Platform-Galaxy-blue)
+This project focuses on the quality assessment of publicly available RNA-Seq data using the FastQC tool implemented on the Galaxy platform. Before downstream transcriptomic analysis, sequencing reads must be evaluated to ensure they are of sufficient quality for reliable alignment and differential gene expression analysis.
 
-![Data](https://img.shields.io/badge/Data-NCBI%20SRA-green)
-
-![Tool](https://img.shields.io/badge/FastQC-QC-orange)
-
-![Status](https://img.shields.io/badge/Status-Completed-success)
-
-</p>
+FastQC generates comprehensive quality metrics, including sequence quality, GC content, duplication levels, adapter contamination, and sequence composition.
 
 ---
 
-Project Overview
+# Objective
 
-High-throughput sequencing (Next-Generation Sequencing, NGS) generates millions of DNA or RNA reads that require quality assessment before downstream analysis.
-
-This project demonstrates a complete **quality-control workflow** for NGS data using the **Galaxy** platform. A publicly available sequencing dataset was downloaded from the **NCBI Sequence Read Archive (SRA)** and analysed using FastQC, quality trimming and BLAST.
-
-The objective was to determine sequencing quality, improve read quality by removing low-quality bases and adapters, and verify the biological identity of the sequencing reads.
-
----
-
-Objectives
-
-✔ Download publicly available sequencing data
-
-✔ Understand FASTQ file structure
-
-✔ Perform sequence quality assessment
-
-✔ Identify sequencing artifacts
-
-✔ Remove low-quality reads and adapters
-
-✔ Compare quality before and after trimming
-
-✔ Identify sequences using BLAST
-
-✔ Interpret biological significance
+- Evaluate the quality of RNA-Seq reads.
+- Identify sequencing artifacts.
+- Detect adapter contamination.
+- Assess base quality across sequencing reads.
+- Determine whether preprocessing (trimming) is required before alignment.
 
 ---
 
- Biological Background
+# Dataset Information
 
-Next-Generation Sequencing technologies have revolutionized molecular biology by enabling rapid sequencing of DNA and RNA.
-
-However, sequencing machines may introduce
-
-- sequencing errors
-- adapter contamination
-- PCR bias
-- GC bias
-- low-quality nucleotide calls
-
-These issues must be detected before downstream analyses such as
-
-- Genome Assembly
-- Variant Calling
-- RNA-Seq
-- Differential Gene Expression
-- Functional Enrichment
-
-FastQC is one of the most widely used quality assessment tools for evaluating sequencing data.
-
----
-
-Dataset Information
-
-| Parameter | Description |
-|-----------|-------------|
-| Database | NCBI Sequence Read Archive |
-| Accession Number | SRR25848669 |
+| Parameter | Value |
+|-----------|-------|
+| Database | NCBI SRA |
+| Accession | SRR2584863 |
 | Organism | Homo sapiens |
-| Data Type | FASTQ |
-| Analysis Platform | Galaxy |
+| Platform | Illumina |
+| Read Length | 150 bp |
+| Total Reads | 3,106,518 |
+| Total Bases | 465.9 Mb |
 
 ---
 
-Software Used
+# Software Used
 
-| Software | Purpose |
-|----------|----------|
-| Galaxy | Bioinformatics Platform |
-| FastQC | Quality Assessment |
-| Trim Galore / Cutadapt | Read Trimming |
-| NCBI BLAST | Sequence Identification |
+- Galaxy
+- FastQC
 
 ---
 
-Experimental Workflow
+# Workflow
 
-```text
 NCBI SRA
-      │
-      ▼
+
+↓
+
 Download FASTQ
-      │
-      ▼
-Upload into Galaxy
-      │
-      ▼
-FastQC Analysis
-      │
-      ▼
+
+↓
+
+Upload to Galaxy
+
+↓
+
+FastQC Quality Assessment
+
+↓
+
 Interpret Quality Metrics
-      │
-      ▼
-Trim Low-quality Reads
-      │
-      ▼
-FastQC After Trimming
-      │
-      ▼
-Compare Reports
-      │
-      ▼
-BLAST Analysis
-      │
-      ▼
-Biological Interpretation
-```
+
+↓
+
+Proceed to Read Trimming (if required)
+
+↓
+
+RNA-Seq Alignment
 
 ---
 
- Step 1 | FASTQ Dataset Retrieval
+# Galaxy Upload
 
-A publicly available sequencing dataset (SRR25848669) was downloaded from the NCBI Sequence Read Archive in FASTQ format.
+The RNA-Seq FASTQ dataset was successfully uploaded into the Galaxy platform and used as input for FastQC analysis.
 
-The FASTQ file contains
-
-- Sequence Identifier
-- Nucleotide Sequence
-- Separator
-- Phred Quality Scores
-
-These data were imported into Galaxy for downstream quality assessment.
+![Galaxy Upload](images/01_galaxy_upload.png)
 
 ---
 
- Figure 1 | FASTQ Structure
+# FastQC Summary
 
-<p align="center">
+The FastQC summary provides an overview of all quality control modules.
 
-<img src="images/fastq_structure.png" width="850">
+**PASS**
+- Basic Statistics
+- Per Base Sequence Quality
+- Per Tile Sequence Quality
+- Per Sequence Quality Scores
+- Per Base N Content
+- Sequence Length Distribution
+- Overrepresented Sequences
 
-</p>
+**WARNING**
+- Per Base Sequence Content
+- Per Sequence GC Content
+- Sequence Duplication Levels
+- Adapter Content
 
----
-
- Step 2 | Initial FastQC Analysis
-
-FastQC was performed to evaluate sequencing quality before trimming.
-
----
-
- Figure 2 | FastQC Report Before Trimming
-
-<p align="center">
-
-<img src="images/fastqc_before.png" width="900">
-
-</p>
+![FastQC Summary](images/02_fastqc_summary.png)
 
 ---
 
-Quality Assessment
+# 1. Basic Statistics
 
-| Module | Status | Interpretation |
-|---------|--------|----------------|
-| Basic Statistics | ✅ Pass | Dataset imported correctly |
-| Per Base Sequence Quality | ✅ Pass | High sequencing accuracy |
-| Per Tile Sequence Quality | ✅ Pass | Uniform sequencing performance |
-| Per Sequence Quality | ✅ Pass | Majority of reads are high quality |
-| Per Base Sequence Content | ❌ Fail | Unequal nucleotide distribution |
-| GC Content | ⚠ Warning | Slight GC bias |
-| N Content | ✅ Pass | Very low ambiguous bases |
-| Sequence Length | ✅ Pass | Uniform read length |
+This module summarizes the sequencing dataset, including read length, sequencing platform, total reads, GC content, and total bases.
 
----
+### Interpretation
 
-Result Interpretation
+- Total Reads: 3,106,518
+- Read Length: 150 bp
+- GC Content: 50%
+- No poor-quality reads detected.
 
-The sequencing dataset exhibited high overall quality.
+Result: **PASS**
 
-Most quality modules successfully passed quality assessment.
-
-Although Per Base Sequence Content failed and GC Content produced a warning, these findings are frequently observed in sequencing libraries and do not necessarily indicate poor-quality sequencing.
-
-Overall, the sequencing reads were considered suitable for downstream processing.
+![Basic Statistics](images/03_basic_statistics.png)
 
 ---
 
-Step 3 | Quality Trimming
+# 2. Per Base Sequence Quality
 
-Low-quality bases and adapter contamination were removed using Trim Galore.
+This module evaluates Phred quality scores across every base position.
 
----
+### Interpretation
 
- Figure 3 | Trimming Summary
+The quality remained consistently above Q30 across the entire read length, indicating excellent sequencing quality.
 
-<p align="center">
+Result: **PASS**
 
-<img src="images/trimming_summary.png" width="850">
-
-</p>
+![Per Base Quality](images/04_per_base_sequence_quality.png)
 
 ---
 
-Interpretation
+# 3. Per Sequence Quality Scores
 
-Quality trimming removed unwanted low-quality regions while preserving high-quality sequencing reads.
+This module evaluates the average quality score of every sequencing read.
 
-This improves the reliability of downstream analyses.
+### Interpretation
 
----
+Nearly all reads possess high average quality scores, indicating reliable sequencing data.
 
- Step 4 | FastQC After Trimming
+Result: **PASS**
 
-FastQC analysis was repeated after trimming.
-
----
-
- Figure 4 | FastQC After Trimming
-
-<p align="center">
-
-<img src="images/fastqc_after.png" width="900">
-
-</p>
+![Per Sequence Quality](images/05_per_sequence_quality.png)
 
 ---
 
- Before vs After Comparison
+# 4. Per Base Sequence Content
 
-| Parameter | Before | After |
-|------------|---------|--------|
-| Base Quality | High | Improved |
-| Adapter Content | Present | Reduced |
-| Low-quality Bases | Present | Reduced |
-| Overall Read Quality | Good | Improved |
+This module compares nucleotide composition across each base position.
 
----
+### Interpretation
 
- Interpretation
+Minor nucleotide bias is observed at the beginning of sequencing reads, which is commonly observed in RNA-Seq libraries.
 
-Comparison of FastQC reports demonstrated improved sequencing quality following trimming.
+Result: **WARNING**
 
-The processed sequencing reads were suitable for downstream biological analysis.
+![Per Base Sequence Content](images/06_per_base_sequence_content.png)
 
 ---
 
- Step 5 | BLAST Analysis
+# 5. Per Sequence GC Content
 
-Representative sequencing reads were analysed using NCBI BLAST.
+This module compares observed GC distribution with the theoretical distribution.
 
----
+### Interpretation
 
-Figure 5 | BLAST Output
+The GC distribution is slightly shifted from the theoretical model, reflecting transcriptomic composition rather than contamination.
 
-<p align="center">
+Result: **WARNING**
 
-<img src="images/blast_result.png" width="900">
-
-</p>
-
----
- BLAST Summary
-
-| Parameter | Result |
-|-----------|--------|
-| Database | NCBI nt |
-| Top Hit | <Update after BLAST> |
-| Organism | <Update after BLAST> |
-| Identity | <Update after BLAST> |
-| Query Coverage | <Update after BLAST> |
-| E-value | <Update after BLAST> |
+![Per Sequence GC Content](images/07_per_sequence_gc_content.png)
 
 ---
 
-Biological Interpretation
+# 6. Sequence Duplication Levels
 
-BLAST identified homologous nucleotide sequences within the NCBI database.
+This module estimates duplicate sequencing reads.
 
-The observed sequence similarity confirmed the biological identity of the sequencing reads and supported the reliability of the processed dataset.
+### Interpretation
 
----
+Moderate duplication levels are present, which are expected in highly expressed transcripts within RNA-Seq datasets.
 
- Skills Demonstrated
+Result: **WARNING**
 
-- Bioinformatics Workflow Development
-- Galaxy Platform
-- FASTQ Data Handling
-- Sequence Quality Assessment
-- FastQC Interpretation
-- Quality Trimming
-- Comparative Data Analysis
-- Sequence Similarity Search
-- BLAST Analysis
-- Biological Data Interpretation
+![Sequence Duplication](images/08_sequence_duplication_levels.png)
 
 ---
 
-Repository Structure
+# 7. Overrepresented Sequences
 
-```
-05_RNASeq_Galaxy
-│
-├── README.md
-│
-├── images
-│   ├── workflow.png
-│   ├── fastq_structure.png
-│   ├── fastqc_before.png
-│   ├── trimming_summary.png
-│   ├── fastqc_after.png
-│   └── blast_result.png
-│
-├── reports
-│   ├── FastQC_Before.html
-│   ├── FastQC_After.html
-│   ├── Trimming_Report.txt
-│   └── BLAST_Report.pdf
-│
-└── raw_data
-    └── SRR25848669.fastq.gz
-```
+This module identifies sequences occurring at unusually high frequency.
+
+### Interpretation
+
+No significant overrepresented sequences were detected.
+
+Result: **PASS**
+
+![Overrepresented Sequences](images/09_overrepresented_sequences.png)
 
 ---
 
-Key Learning Outcomes
+# 8. Per Base N Content
 
-- Understood FASTQ file organization and sequencing quality metrics.
-- Performed quality assessment using FastQC.
-- Improved sequencing quality through trimming.
-- Compared pre- and post-trimming quality reports.
-- Conducted sequence identification using NCBI BLAST.
-- Learned a standard quality-control workflow widely used before downstream genomics and transcriptomics analyses.
+This module evaluates ambiguous base calls (N).
 
----
+### Interpretation
 
-References
+No ambiguous nucleotides were detected throughout sequencing reads.
 
-1. Andrews S. *FastQC: A Quality Control Tool for High Throughput Sequence Data.*
-2. Galaxy Project.
-3. NCBI Sequence Read Archive (SRA).
-4. NCBI BLAST.
-5. Babraham Bioinformatics.
+Result: **PASS**
+
+![Per Base N Content](images/10_per_base_n_content.png)
 
 ---
 
-Next Project
+# 9. Sequence Length Distribution
 
-➡ **Project 6: Functional Enrichment Analysis (Gene Ontology and KEGG Pathway Analysis)**
+This module evaluates read length consistency.
+
+### Interpretation
+
+All sequencing reads are exactly 150 bp in length, indicating uniform sequencing.
+
+Result: **PASS**
+
+![Sequence Length Distribution](images/11_sequence_length_distribution.png)
+
+---
+
+# Overall Conclusion
+
+The RNA-Seq dataset demonstrates excellent sequencing quality suitable for downstream transcriptomic analysis.
+
+Although FastQC generated warnings for:
+
+- Per Base Sequence Content
+- GC Content
+- Sequence Duplication Levels
+- Adapter Content
+
+these warnings are commonly observed in RNA-Seq datasets and do not necessarily indicate poor-quality sequencing. The consistently high base quality (Q30), absence of poor-quality reads, and lack of overrepresented sequences indicate that the dataset is suitable for downstream analysis.
+
+---
+
+# Skills Demonstrated
+
+- RNA-Seq Quality Control
+- FastQC Analysis
+- Galaxy Workflow
+- Quality Assessment of NGS Data
+- Interpretation of FastQC Reports
+- Bioinformatics Data Preprocessing
+
+---
+
+# Next Project
+
+**Project 7 – RNA-Seq Read Trimming and Preprocessing Using Trim Galore**
