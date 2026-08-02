@@ -168,12 +168,11 @@ The enrichment results were visualized using bar plots and dot plots generated b
 ## 1. GO Biological Process (BP)
 
 ### Bar Plot
-
-![GO Biological Process Barplot](images/go_bp_barplot.png)
+![GO Biological Process Barplot](go_bp_barplot.png)
 
 ### Top Enriched GO Biological Processes
+![GO Biological Process Table](go_bp_table.png)
 
-![GO Biological Process Table](images/go_bp_table.png)
 
 ---
 
@@ -181,35 +180,35 @@ The enrichment results were visualized using bar plots and dot plots generated b
 
 ### Bar Plot
 
-![GO Cellular Component Barplot](images/go_cc_barplot.png)
+![GO Cellular Component Barplot](go_cc_barplot.png)
 
 ### Top Enriched GO Cellular Components
 
-![GO Cellular Component Table](images/go_cc_table.png)
+![GO Cellular Component Table](go_cc_table.png)
 
 ---
 
 ## 3. GO Molecular Function (MF)
 
 ### Bar Plot
+![GO Molecular Function Barplot](go_mf_barplot.png
 
-![GO Molecular Function Barplot](images/go_mf_barplot.png)
 
 ### Top Enriched GO Molecular Functions
+![GO Molecular Function Table](go_mf_table.png)
 
-![GO Molecular Function Table](images/go_mf_table.png)
 
 ---
 
 ## 4. KEGG Pathway Analysis
 
 ### Bar Plot
+![KEGG Pathway Barplot](kegg_barplot.png)
 
-![KEGG Pathway Barplot](images/kegg_barplot.png)
 
 ### Top Enriched KEGG Pathways
+![KEGG Pathway Table](kegg_table.png)
 
-![KEGG Pathway Table](images/kegg_table.png)
 ---
 
  Interpretation
